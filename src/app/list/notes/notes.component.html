@@ -1,0 +1,14 @@
+<div class="ListNotes">
+    @if (cards.length === 0 ) 
+    {
+        <p>List is empty...</p>
+        <p>Add a new ToDo</p>
+    }
+    @else 
+    {
+        @for (card of cards; track $index) 
+        {
+            <app-note-card [item]="card" ></app-note-card>
+        }
+    }
+</div>

@@ -1,0 +1,11 @@
+html,
+body {
+    height: 100%;
+    color: white;
+    background: black;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

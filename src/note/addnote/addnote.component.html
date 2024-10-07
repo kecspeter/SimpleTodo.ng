@@ -1,0 +1,18 @@
+<div class="addnote">
+    <form class="addnote-form">
+    <mat-form-field class="form-item">
+        <mat-label>Add a new note</mat-label>
+        <input matInput placeholder="Note title" [(ngModel)]="item.title" name="title">
+    </mat-form-field>
+    
+    @if (item.title.length > 0) 
+    {
+            <mat-form-field class="form-item">
+                <mat-label>Description</mat-label>
+                <textarea matInput placeholder="Description" [(ngModel)]="item.text" name="text"></textarea>
+            </mat-form-field>
+            <button (click)="updateItem(item)" class="form-item form-button" mat-fab extended>New note<mat-icon>add</mat-icon></button>   
+    }            
+    </form>
+</div>
+  

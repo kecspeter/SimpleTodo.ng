@@ -1,0 +1,18 @@
+<!-- <main class="main">
+  <app-nav-bar></app-nav-bar>
+  <div class="container">
+    <div class="content">
+      <app-addnote></app-addnote>
+      <h3>ToDos List</h3>
+      <div class="listcontainer">
+          <app-notes></app-notes>
+      </div>
+    </div>
+  </div>
+</main> -->
+
+<app-nav-bar></app-nav-bar>
+<div class="container">
+  <app-addnote class="container-item" (addItemEvent)="addItem($event)"></app-addnote>
+  <app-notes class="container-item" [cards]="notes"></app-notes>
+</div>

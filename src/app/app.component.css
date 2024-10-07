@@ -1,0 +1,13 @@
+.container
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+}
+.container-item {
+    width: inherit;
+}

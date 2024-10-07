@@ -1,0 +1,9 @@
+app-note-card
+{
+    padding: 1em;
+}
+
+app-note-card:first-of-type
+{
+    padding: 0;
+}
